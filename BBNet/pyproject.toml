@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bbnet"
+version = "0.1.0"
+authors = [
+  { name="Your Name", email="you@example.com" }
+]
+description = "BBNet: A neural network emulator for BBN"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+  "torch>=2.0",
+  "numpy",
+  "scipy",
+  "scikit-learn",
+  "joblib"
+]
+
+[tool.setuptools.package-data]
+bbnet = ["artifacts/*"]
